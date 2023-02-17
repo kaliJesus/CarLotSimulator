@@ -1,4 +1,6 @@
 ﻿using System;
+using CarLotSimulator;
+
 
 namespace CarLotSimulator
 {
@@ -6,6 +8,46 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+            var toyota = new Car();
+            toyota.Year = 2013;
+            toyota.Make = "Toyota";
+            toyota.Model = "rav";
+            toyota.EngineNoise = "Noisy";
+            toyota.HonkNoise = "Honk Honk";
+            toyota.IsDrivable = true;
+
+            Car Honda = new Car() { Make = "Honda", Model = "civic" };
+
+            Car Tesla = new Car() { Make = "Tesla", Model = "T-22" };
+
+
+            Console.WriteLine(toyota.MakeEngineNoise());
+            Console.WriteLine(toyota.Make);
+            Console.WriteLine(toyota.Year);
+            Console.WriteLine(Honda.Model);
+
+            Console.WriteLine(Tesla.Make);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //TODO
 
             //Create a seperate class file called Car
