@@ -8,6 +8,7 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+            CarLot CarCount = new CarLot();
             var toyota = new Car();
             toyota.Year = 2013;
             toyota.Make = "Toyota";
@@ -16,10 +17,17 @@ namespace CarLotSimulator
             toyota.HonkNoise = "Honk Honk";
             toyota.IsDrivable = true;
 
+            CarCount.CarList.Add(toyota);
+            Console.WriteLine($"{CarLot.Carss} Car");
+           
+
             Car Honda = new Car() { Make = "Honda", Model = "civic" };
+            CarCount.CarList.Add(Honda);
+            Console.WriteLine($"{CarLot.Carss} Car");
 
             Car Tesla = new Car() { Make = "Tesla", Model = "T-22" };
-
+            CarCount.CarList.Add(Tesla);
+            Console.WriteLine($"{CarLot.Carss} Car");
 
             Console.WriteLine(toyota.MakeEngineNoise());
             Console.WriteLine(toyota.Make);
